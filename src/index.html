@@ -12,31 +12,48 @@
 </head>
 
 <body>
+    <button id="b-try-again"> New Game </button>
+
     <main class="mainframe">
         <section class="player--1" >
-            <h1>Player 1</h1>
-            <h1 class="score--1">0</h1>
-            
-            <section class="buttons">
-                <button> Roll</button>
-                <button> Hold</button>
+            <section>
+                <h1>Player 1</h1>
+                <h1 class="score--1">0</h1>
             </section>
+
+            <main class="subframes">
+                <h1>Current</h1>
+                <h1 class="current-score--1">0</h1>
+            </main>
         </section>
 
         <section class="midframe">
-            <!-- FIXME Implement it later on -->
-        </section>
-
-        <section class="player--1">
-            <h1>Player 2</h1>
-            <h1 class="score--2">0</h1>
-
-            <section class="buttons">
-                <button> Roll</button>
-                <button> Hold</button>
+            <icon class="dice hidden"></icon>
+        
+            <span class="arrow-left">&#8592;</span>
+            
+            <section class="game-buttons">
+                <button id="b-roll-dice"> Roll</button>
+                <button id="b-hold-score"> Hold</button>
             </section>
         </section>
+
+        <section class="player--2">
+            <section>
+                <h1>Player 2</h1>
+                <h1 class="score--2">0</h1>
+            </section>
+
+            <main class="subframes">
+                <h1>Current</h1>
+                <h1 class="current-score--2">0</h1>
+            </main>
+        </section>
     </main>
+
+    <footer>
+        <p>Created by <a href="http://www.github.com/hazarN">Hazar Namdar</a></p>
+    </footer>
     
     <script src="script.js"></script>
 </body>
