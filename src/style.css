@@ -220,11 +220,15 @@ a {
         height: 75%;
     }
     .subframes {
-        width: 40%;
+        width: 50%;
         height: 15%;
     }
     button, .game-buttons > * {
-        width: 75px;
+        width: 55px;
         height: 25px;
+    }
+    .dice {
+        width: 60px;
+        height: 60px;
     }
 }
