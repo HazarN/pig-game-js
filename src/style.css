@@ -161,3 +161,63 @@ footer {
 a {
     color: bisque;
 }
+
+/* Media Queries */
+@media screen and (max-width: 1080px) {
+    html {
+        font-size: 75%;
+    }
+    .mainframe {
+        width: 60%;
+        height: 65%;
+    }
+    .subframes {
+        width: 45%;
+        height: 25%;
+    }
+    button, .game-buttons > * {
+        width: 125px;
+        height: 35px;
+    }
+    .dice {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }
+    .mainframe {
+        width: 70%;
+        height: 75%;
+    }
+    .subframes {
+        width: 40%;
+        height: 20%;
+    }
+
+    button, .game-buttons > * {
+        width: 100px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 55%;
+    }
+    .mainframe {
+        width: 70%;
+        height: 75%;
+    }
+    .subframes {
+        width: 40%;
+        height: 15%;
+    }
+    button, .game-buttons > * {
+        width: 75px;
+        height: 25px;
+    }
+}
