@@ -58,7 +58,7 @@ function updateScore() {
 function checkWinner() {
     const currentScore = Number(document.querySelector(`.current-score--${activePlayer}`).textContent);
     const score        = Number(document.querySelector(`.score--${activePlayer}`).textContent);
-    const goal         = 100;
+    const goal         = 500;
 
     if (score >= goal || currentScore >= goal) {
         if (score < goal) {
