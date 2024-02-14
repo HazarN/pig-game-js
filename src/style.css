@@ -143,8 +143,15 @@ button:hover {
 .hidden {
     display: none !important;
 }
-.turn {
-    background-color: rgba(255, 255, 255, .25);
+.winner, .loser {
+    border: .25rem solid bisque;
+    transition: .5s ease-in-out;
+}
+.winner {
+    background-color: #03C04A;
+}
+.loser {
+    background-color: #D21F3C;
 }
 
 /* Footer */
