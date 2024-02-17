@@ -14,7 +14,6 @@ rollEl.addEventListener('click', () => {
 
     if (num === 1) {
         const scoreEl              = document.querySelector(`.score--${activePlayer}`);
-        scoreEl.textContent        = 0;
         currentScoreEl.textContent = 0;
         switchPlayer();
     } else {
@@ -58,7 +57,7 @@ function updateScore() {
 function checkWinner() {
     const currentScore = Number(document.querySelector(`.current-score--${activePlayer}`).textContent);
     const score        = Number(document.querySelector(`.score--${activePlayer}`).textContent);
-    const goal         = 500;
+    const goal         = 1000;
 
     if (score >= goal || currentScore >= goal) {
         if (score < goal) {
